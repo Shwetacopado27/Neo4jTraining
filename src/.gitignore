@@ -1,4 +1,3 @@
-
 #package.xml file is recreated on the fly by Copado, no need to track unnecessary changes of this file
 package.xml
 
@@ -30,16 +29,15 @@ triggers/copado__*
 pages/copado__*
 lwc/copado__*
 aura/copado__*
-staticresources/copado__*
+static resources/copado__*
 
 
-classes/sf_chttr_apps__*
-triggers/sf_chttr_apps__*
-pages/sf_chttr_apps__*
-lwc/sf_chttr_apps__*
-aura/sf_chttr_apps__*
-staticresources/sf_chttr_apps__*
-
+classes/mobileLanding__*
+triggers/mobileLanding__*
+pages/mobileLanding__*
+lwc/mobileLanding__*
+aura/mobileLanding__*
+static resources/mobileLanding__*
 
 
 
@@ -56,4 +54,4 @@ staticresources/sf_chttr_apps__*
 #Until the above is achieved, you can ignore them as follows
 
 # sites/*
-# siteDotComSites/
+# siteDotComSites/*
