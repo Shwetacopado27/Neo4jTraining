@@ -295,6 +295,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Neo_issue__c</fullName>
+        <externalId>false</externalId>
+        <label>Neo_issue</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
