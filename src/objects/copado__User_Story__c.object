@@ -7146,6 +7146,56 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
                     <default>false</default>
                     <label>Cancelled</label>
                 </value>
+                <value>
+                    <fullName>Ready for Design</fullName>
+                    <default>false</default>
+                    <label>Ready for Design</label>
+                </value>
+                <value>
+                    <fullName>Design In Progress</fullName>
+                    <default>false</default>
+                    <label>Design In Progress</label>
+                </value>
+                <value>
+                    <fullName>Ready for Development</fullName>
+                    <default>false</default>
+                    <label>Ready for Development</label>
+                </value>
+                <value>
+                    <fullName>Development In Progress</fullName>
+                    <default>false</default>
+                    <label>Development In Progress</label>
+                </value>
+                <value>
+                    <fullName>Ready for Technical Review</fullName>
+                    <default>false</default>
+                    <label>Ready for Technical Review</label>
+                </value>
+                <value>
+                    <fullName>Technical Review in Progress</fullName>
+                    <default>false</default>
+                    <label>Technical Review in Progress</label>
+                </value>
+                <value>
+                    <fullName>Testing In Progress</fullName>
+                    <default>false</default>
+                    <label>Testing In Progress</label>
+                </value>
+                <value>
+                    <fullName>Ready for Release</fullName>
+                    <default>false</default>
+                    <label>Ready for Release</label>
+                </value>
+                <value>
+                    <fullName>Release In Progress</fullName>
+                    <default>false</default>
+                    <label>Release In Progress</label>
+                </value>
+                <value>
+                    <fullName>Released</fullName>
+                    <default>false</default>
+                    <label>Released</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -7373,6 +7423,40 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Connect_log__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Connect log</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Last_Synced_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Synced Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <label>User Story</label>
     <listViews>
@@ -8743,6 +8827,14 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
                 <default>false</default>
             </values>
             <values>
+                <fullName>Design In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Draft</fullName>
                 <default>true</default>
             </values>
@@ -8751,11 +8843,43 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
                 <default>false</default>
             </values>
             <values>
+                <fullName>Ready for Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Technical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Ready for testing</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Release In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Review in Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing In Progress</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
