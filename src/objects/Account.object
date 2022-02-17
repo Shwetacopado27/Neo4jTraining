@@ -295,9 +295,9 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Neo_issue__c</fullName>
+        <fullName>Neo4j_training__c</fullName>
         <externalId>false</externalId>
-        <label>Neo_issue</label>
+        <label>Neo4j_training</label>
         <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -305,9 +305,9 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Neo4j_training__c</fullName>
+        <fullName>Neo_issue__c</fullName>
         <externalId>false</externalId>
-        <label>Neo4j_training</label>
+        <label>Neo_issue</label>
         <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
