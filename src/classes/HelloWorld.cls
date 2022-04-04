@@ -1,5 +1,5 @@
 global class HelloWorld {
 public String hello() {
-return 'Hello World20';
+return 'Hello World30';
 }
 }
