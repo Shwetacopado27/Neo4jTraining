@@ -31,6 +31,20 @@ lwc/copado__*
 aura/copado__*
 static resources/copado__*
 
+classes/copadovsm__*
+triggers/copadovsm__*
+pages/copadovsm__*
+lwc/copadovsm__*
+aura/copadovsm__*
+static resources/copadovsm__*
+
+classes/copadoconnect__*
+triggers/copadoconnect__*
+pages/copadoconnect__*
+lwc/copadoconnect__*
+aura/copadoconnect__*
+static resources/copadoconnect__*
+
 
 classes/mobileLanding__*
 triggers/mobileLanding__*
