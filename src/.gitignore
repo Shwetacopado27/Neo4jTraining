@@ -30,6 +30,7 @@ pages/copado__*
 lwc/copado__*
 aura/copado__*
 static resources/copado__*
+profiles/*
 
 
 classes/mobileLanding__*
