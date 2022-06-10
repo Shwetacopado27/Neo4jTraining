@@ -29,29 +29,16 @@ triggers/copado__*
 pages/copado__*
 lwc/copado__*
 aura/copado__*
-static resources/copado__*
-
-classes/copadovsm__*
-triggers/copadovsm__*
-pages/copadovsm__*
-lwc/copadovsm__*
-aura/copadovsm__*
-static resources/copadovsm__*
-
-classes/copadoconnect__*
-triggers/copadoconnect__*
-pages/copadoconnect__*
-lwc/copadoconnect__*
-aura/copadoconnect__*
-static resources/copadoconnect__*
+staticresources/copado__*
 
 
-classes/mobileLanding__*
-triggers/mobileLanding__*
-pages/mobileLanding__*
-lwc/mobileLanding__*
-aura/mobileLanding__*
-static resources/mobileLanding__*
+classes/sf_chttr_apps__*
+triggers/sf_chttr_apps__*
+pages/sf_chttr_apps__*
+lwc/sf_chttr_apps__*
+aura/sf_chttr_apps__*
+staticresources/sf_chttr_apps__*
+
 
 
 

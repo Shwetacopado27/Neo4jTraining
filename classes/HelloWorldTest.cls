@@ -1,4 +1,3 @@
-//testclass for hello world
 @isTest
 private class HelloWorldTest {
 @isTest static void hello() {
