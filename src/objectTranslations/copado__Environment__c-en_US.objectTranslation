@@ -137,8 +137,16 @@
         <label><!-- Platform --></label>
         <name>copado__Platform__c</name>
         <picklistValues>
+            <masterLabel>Heroku</masterLabel>
+            <translation><!-- Heroku --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDX</masterLabel>
+            <translation><!-- SFDX --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Salesforce</masterLabel>
@@ -206,6 +214,10 @@
             <translation><!-- Only If User Has No Org Credential --></translation>
         </picklistValues>
     </fields>
+    <validationRules>
+        <errorMessage><!-- An environment cannot have the same job template for Commit, Promote and Deploy. --></errorMessage>
+        <name>copado__Unique_Job_Template</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- An environment cannot have the same automation template for both Promote and Deploy --></errorMessage>
         <name>copado__Unique_Template_for_promote_and_deploy</name>

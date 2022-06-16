@@ -148,4 +148,12 @@
         <name>copadoconnect__Copado_Connect</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>cmcSf__CMC_SFDX</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>DEVHUB_llvnd7lsjrw042tapsr5</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
 </AppMenu>
