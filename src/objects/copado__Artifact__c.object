@@ -166,6 +166,16 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>cmcSf__IsOrgDependent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Org Dependent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>copado__Artifact_Repository__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <deprecated>false</deprecated>
@@ -329,7 +339,6 @@ The credential where the unmanaged package is created from.</inlineHelpText>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -346,12 +355,6 @@ The credential where the unmanaged package is created from.</inlineHelpText>
                     <fullName>First-Generation Package</fullName>
                     <default>false</default>
                     <label>First-Generation Package</label>
-                </value>
-                <value>
-                    <fullName>Unmanaged</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Unmanaged</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
