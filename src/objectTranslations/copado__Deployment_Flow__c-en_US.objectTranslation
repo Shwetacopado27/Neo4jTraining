@@ -172,8 +172,16 @@ This value will prefill the order by field on related Promotion record creation 
         <label><!-- Platform --></label>
         <name>copado__Platform__c</name>
         <picklistValues>
+            <masterLabel>Heroku</masterLabel>
+            <translation><!-- Heroku --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDX</masterLabel>
+            <translation><!-- SFDX --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Salesforce</masterLabel>
@@ -200,6 +208,10 @@ This value will prefill the order by field on related Promotion record creation 
         <name>copado__Static_Code_Analysis_Settings__c</name>
         <relationshipLabel><!-- Pipelines --></relationshipLabel>
     </fields>
+    <validationRules>
+        <errorMessage><!-- A pipeline cannot have the same job template for Commit, Promote and Deploy. --></errorMessage>
+        <name>copado__Unique_Job_Template</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- A pipeline cannot have the same template for both Promote and Deploy --></errorMessage>
         <name>copado__Unique_Template_for_promote_and_deploy</name>
