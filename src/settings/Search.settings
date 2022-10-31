@@ -21,6 +21,12 @@
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>ActiveScratchOrg</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>Activity</name>
             <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
@@ -297,6 +303,12 @@
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>NamespaceRegistry</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>Note</name>
             <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
@@ -364,6 +376,12 @@
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>Report</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>ScratchOrgInfo</name>
             <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
         <searchSettingsByObject>
@@ -502,7 +520,7 @@
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>copado__Compliance_Rule_Criteria__c</name>
-            <resultsPerPageCount>0</resultsPerPageCount>
+            <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
@@ -741,6 +759,18 @@
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>copado__Notification_Default_Channels__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>copado__Notification_Subscription__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>copado__OrgDiff__c</name>
             <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
@@ -761,6 +791,12 @@
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>copado__Persona__c</name>
             <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>copado__Pipeline_Action__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
         </searchSettingsByObject>
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>
@@ -791,6 +827,18 @@
             <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
             <name>copado__Pull_Request__c</name>
             <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>copado__Quality_Gate_Rule_Condition__c</name>
+            <resultsPerPageCount>0</resultsPerPageCount>
+        </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>copado__Quality_Gate_Rule__c</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
         <searchSettingsByObject>
             <enhancedLookupEnabled>false</enhancedLookupEnabled>

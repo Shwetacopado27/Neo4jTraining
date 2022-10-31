@@ -128,17 +128,24 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Standard</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>copado__Promotion_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>copado__Promotion_Record_Page</content>
         <formFactor>Small</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>copado__Promotion_Header</compactLayoutAssignment>
@@ -621,6 +628,20 @@
         </displayedFields>
         <label>Pipeline Manager</label>
     </fieldSets>
+    <fields>
+        <fullName>cmcSf__Apex_Test_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Test levels in order from least to most restrictive</description>
+        <externalId>false</externalId>
+        <label>Apex Test Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>cmcSf__Apex_Test_Level</valueSetName>
+        </valueSet>
+    </fields>
     <fields>
         <fullName>copado__Back_Promotion__c</fullName>
         <defaultValue>false</defaultValue>
