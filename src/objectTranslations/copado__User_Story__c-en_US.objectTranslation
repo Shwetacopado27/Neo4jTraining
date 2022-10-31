@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
+        <label><!-- VSM --></label>
+        <name>VSM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Add Test Classes --></label>
+        <name>cmcSf__Add_Test_Classes</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pipeline Based Package Distribution --></label>
+        <name>cmcSf__PipelineBasedPackageDistribution</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- Bundle --></label>
         <name>copado__Bundle</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Bundle Sync Fields --></label>
+        <name>copado__Bundle_Sync_Fields</name>
     </fieldSets>
     <fieldSets>
         <label><!-- CBM Fields --></label>
@@ -61,6 +77,14 @@
         <name>copado__Work_Manager_Relations</name>
     </fieldSets>
     <fields>
+        <label><!-- Jira Key --></label>
+        <name>Jira_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apex Test Level --></label>
+        <name>cmcSf__Apex_Test_Level__c</name>
+    </fields>
+    <fields>
         <label><!-- Acceptance Criteria Status --></label>
         <name>copado__Acceptance_Criteria_Status__c</name>
         <picklistValues>
@@ -79,6 +103,11 @@
     <fields>
         <label><!-- Acceptance Criteria --></label>
         <name>copado__Acceptance_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to split your User Story&apos;s actual effort on implementation, reviews, testing, and documentation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope. --></help>
+        <label><!-- Actual Points Other --></label>
+        <name>copado__Actual_Points_Other__c</name>
     </fields>
     <fields>
         <help><!-- Coverage of the Apex Classes added or committed within the User Story. --></help>
@@ -619,6 +648,11 @@
         <name>copado__Parent_Epic_Title__c</name>
     </fields>
     <fields>
+        <help><!-- Use this field to split your User Story effort estimation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope. --></help>
+        <label><!-- Planned Points Other --></label>
+        <name>copado__Planned_Points_Other__c</name>
+    </fields>
+    <fields>
         <help><!-- This field auto-populates and displays the pipeline platform --></help>
         <label><!-- Platform --></label>
         <name>copado__Platform__c</name>
@@ -817,7 +851,12 @@
         <relationshipLabel><!-- User Stories --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Total Story Points --></label>
+        <help><!-- Sum of Actual Points and Actual Points Other. Use this field along with Actual Points Other if you need to split your User Story effort among different scopes. --></help>
+        <label><!-- Total Actual Points --></label>
+        <name>copado__Total_Actual_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Planned Points --></label>
         <name>copado__Total_Story_Points__c</name>
     </fields>
     <fields>
@@ -886,8 +925,16 @@
         <name>copado__Utility</name>
     </recordTypes>
     <validationRules>
+        <errorMessage><!-- Please make sure you have approved the related pull request for this user story. --></errorMessage>
+        <name>Pull_Request_Not_Approved</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- A cancellation reason must be given. --></errorMessage>
         <name>copado__Cancellation_reason_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The credential must belong to the environment. --></errorMessage>
+        <name>copado__CredentialsMustBelongToTheEnvironment</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- This User Story does not meet the required Apex coverage threshold to be promoted. --></errorMessage>
@@ -896,6 +943,10 @@
     <validationRules>
         <errorMessage><!-- Test scratch orgs cannot be used for developments --></errorMessage>
         <name>copado__Test_scratch_orgs_cannot_be_used_for_dev</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a value between 0 to 100 to specify the Progress in percentage. --></errorMessage>
+        <name>copado__User_Story_Progress_Range_Validation</name>
     </validationRules>
     <webLinks>
         <label><!-- Add_Apex_Tests --></label>

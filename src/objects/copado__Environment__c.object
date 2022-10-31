@@ -469,6 +469,11 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
+                    <fullName>Heroku</fullName>
+                    <default>false</default>
+                    <label>Heroku</label>
+                </value>
+                <value>
                     <fullName>Salesforce</fullName>
                     <default>true</default>
                     <label>Salesforce</label>
@@ -477,6 +482,11 @@
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
+                </value>
+                <value>
+                    <fullName>SFDX</fullName>
+                    <default>false</default>
+                    <label>SFDX</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -622,6 +632,28 @@
     </fields>
     <label>Environment</label>
     <listViews>
+        <fullName>Heroku</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Localdev,HerokuDev,Herokuprod,Staging</value>
+        </filters>
+        <label>Heroku</label>
+    </listViews>
+    <listViews>
+        <fullName>Salesforce</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>DEV1,DEV2,HotFix,QA,UAT,Production</value>
+        </filters>
+        <label>Salesforce</label>
+    </listViews>
+    <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
         <columns>copado__Type__c</columns>
@@ -659,6 +691,31 @@
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>copado__Unique_Job_Template</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND(
+NOT(ISBLANK(copado__CommitJobTemplateOverride__c)),
+OR(
+copado__CommitJobTemplateOverride__c == copado__Deployment_Job_Template_Override__c,
+copado__CommitJobTemplateOverride__c == copado__Promotion_Job_Template_Override__c
+)),
+AND(
+NOT(ISBLANK(copado__Promotion_Job_Template_Override__c)),
+OR(
+copado__Promotion_Job_Template_Override__c == copado__Deployment_Job_Template_Override__c,
+copado__Promotion_Job_Template_Override__c == copado__CommitJobTemplateOverride__c
+)),
+AND(
+NOT(ISBLANK(copado__Deployment_Job_Template_Override__c)),
+OR(
+copado__Deployment_Job_Template_Override__c == copado__Promotion_Job_Template_Override__c,
+copado__Deployment_Job_Template_Override__c == copado__CommitJobTemplateOverride__c
+))
+)</errorConditionFormula>
+        <errorMessage>An environment cannot have the same job template for Commit, Promote and Deploy.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>copado__Unique_Template_for_promote_and_deploy</fullName>
         <active>true</active>
