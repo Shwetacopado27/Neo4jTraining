@@ -255,6 +255,11 @@
         <unique>false</unique>
     </fields>
     <label>Compliance Rule Criteria</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>RC-{000000}</displayFormat>
         <label>Compliance Rule Criteria Name</label>
