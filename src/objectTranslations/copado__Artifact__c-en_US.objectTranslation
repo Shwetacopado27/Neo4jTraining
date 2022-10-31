@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Is Org Dependent --></label>
+        <name>cmcSf__IsOrgDependent__c</name>
+    </fields>
+    <fields>
         <help><!-- This is Repository where the Artifact can be stored, in the master branch --></help>
         <label><!-- Package Repository --></label>
         <name>copado__Artifact_Repository__c</name>
