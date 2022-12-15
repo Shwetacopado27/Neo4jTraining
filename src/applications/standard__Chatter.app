@@ -3,7 +3,9 @@
     <defaultLandingTab>standard-Chatter</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
     <tabs>MobileLanding</tabs>
+    <tabs>copado__Compliance_Rule_Criteria__c</tabs>
 </CustomApplication>
