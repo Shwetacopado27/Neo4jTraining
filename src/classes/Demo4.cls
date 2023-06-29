@@ -5,7 +5,7 @@ public class Demo4 {
           
     Account a = new Account();
       a.name = 'test account';
-      a.website = 'www.apex.com';
+      a.website = 'www.apex1.com';
     system.debug('before referencebyvalue:' + a);
     
     referencebyvalue(a);
