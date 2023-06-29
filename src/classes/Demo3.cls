@@ -3,7 +3,7 @@ public class Demo3 {
   public void mainvaluemethod()
   {
           
-    string websiteURL = 'www.apex.com';
+    string websiteURL = 'www.apexclass.com';
     
     system.debug('before passbyvalue:' + websiteURL);
     
